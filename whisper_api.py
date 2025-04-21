@@ -6,9 +6,6 @@ from flask import Flask, request
 # from audio_recorder_streamlit import audio_recorder
 import torch
 # import numpy as np
-# from langchain import PromptTemplate, LLMChain
-# from langchain_community.chat_models import ChatOllama
-# from gtts import gTTS
 import os
 
     
