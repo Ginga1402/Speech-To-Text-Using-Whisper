@@ -8,9 +8,10 @@ Voice2Text is a simple yet powerful Python-based application that transcribes sp
 
 This repository offers both a function-level implementation and a RESTful API using Flask, allowing you to integrate voice transcription into your Python apps or web-based services effortlessly. The transcription supports multiple languages and can be adjusted to use different Whisper model sizes based on performance and resource availability (default is small).
 
----
 
-## ** Project Structure**
+![Image](https://github.com/user-attachments/assets/d33185d2-1a5c-4bc9-8f43-e1c8e337263d)
+
+## **Project Structure**
 
 ```
 Speech-To-Text-Using-Whisper/
@@ -22,15 +23,12 @@ Speech-To-Text-Using-Whisper/
 └── README.md
 ```
 
-## ** Use Case**
+## **Use Case**
 
-#### Build voice-driven applications
-
-1. Automate transcription of voice notes, podcasts, or interviews
-
-2. Convert multilingual speech into text
-
-3. Use as a backend service for AI-powered assistants or accessibility tools
+1. Build voice-driven applications
+2. Automate transcription of voice notes, podcasts, or interviews
+3. Convert multilingual speech into text
+4. Use as a backend service for AI-powered assistants or accessibility tools
 
 
 ## **Installation Instructions**
@@ -97,20 +95,4 @@ Contributions to this project are welcome! If you have ideas for improvements, b
 ## **License**
 This project is licensed under the MIT License - see the LICENSE file for details.
 
----
 
-
-
-
-
----
-
-
-
-
-
-
-
---- 
-
-```
