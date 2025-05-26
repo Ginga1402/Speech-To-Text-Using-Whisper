@@ -10,7 +10,7 @@ This repository offers both a function-level implementation and a RESTful API us
 
 ---
 
-## **🛠️ Project Structure**
+## ** Project Structure**
 
 ```
 Speech-To-Text-Using-Whisper/
@@ -22,7 +22,7 @@ Speech-To-Text-Using-Whisper/
 └── README.md
 ```
 
-## **💡 Use Case**
+## ** Use Case**
 
 #### Build voice-driven applications
 
@@ -78,6 +78,9 @@ python whisper_api.py
 ```
 Flask API that converts provided voice input to text using OpenAI's Whisper and handles requests asynchronously.
 
+## **Model Customization**
+By default, the project uses the small variant of [OpenAI Whisper](https://github.com/openai/whisper). You can change it to other supported models (tiny, medium, large, etc.) depending on your hardware and accuracy requirements.
+
 
 ## **Technologies Used**
    
@@ -95,6 +98,8 @@ Contributions to this project are welcome! If you have ideas for improvements, b
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
+
+
 
 
 
