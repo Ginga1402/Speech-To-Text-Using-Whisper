@@ -1,11 +1,8 @@
 import whisper
 import torch
-import os,numpy as np
+import numpy as np
 from flask import Flask, request
-# import streamlit as st
-# from audio_recorder_streamlit import audio_recorder
 import torch
-# import numpy as np
 import os
 
     
@@ -15,7 +12,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using torch {torch.__version__} ({DEVICE})")
 
 
-model = whisper.load_model("small", device=DEVICE)
+model = whisper.load_model("small", device=DEVICE)  ## Models Available: tiny,base,small,medium,large,turbo
 
 print(
     f"whisper small Model is {'multilingual' if model.is_multilingual else 'English-only'} "
@@ -33,8 +30,7 @@ def transcription(audio_location: str, target_langauge : str):
 
 
 
-from flask import Flask, request
-import os
+##### Flask API 
 
 app = Flask(__name__)
 
