@@ -24,12 +24,12 @@ print(
 
 
 
-def transcription(audio_location):
+def transcription(audio_location: str, target_langauge : str):
     audio_file = audio_location
-    input_query = model.transcribe(audio_file)
-    user_query = input_query["text"]
-    return user_query
-
+    targetlanguage = target_langauge
+    transcription = model.transcribe(audio_file,language = targetlanguage)
+    transcribed_text = transcription["text"]
+    return transcribed_text
 
 
 
@@ -41,6 +41,7 @@ app = Flask(__name__)
 @app.route('/transcribe', methods=['POST'])
 def transcribe_audio_file():
     audio_path = request.json.get('audio_path')
+    target_langauge = request.json.get('target_langauge')
 
     if not audio_path:
         return 'Error: Audio path not provided', 400
@@ -49,10 +50,13 @@ def transcribe_audio_file():
         return 'Error: Audio file not found', 404
 
     try:
-        transcription_result = transcription(audio_location=audio_path)
+        transcription_result = transcription(audio_location=audio_path,target_langauge=target_langauge)
         return {'transcription': transcription_result}
     except Exception as e:
         return f'Error: {str(e)}', 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=1402)
+
+
+    
