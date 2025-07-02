@@ -1,3 +1,5 @@
+👨‍💻 Humanly Sculpted, 🤖 AI-Scripted: The Perfect Synergy
+
 # **🎙️ Voice2Text: Seamless Speech Transcription with OpenAI Whisper**
 
 ### **Convert Your Voice Into Text with Ease – Powered by Whisper and Flask**
